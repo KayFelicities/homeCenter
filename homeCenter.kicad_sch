@@ -1921,7 +1921,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 40.64 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8a3b2b4e-5877-4d53-a830-bd90843f7e33)
-    (property "Reference" "5V1" (id 0) (at 42.0371 92.5 0)
+    (property "Reference" "TP1" (id 0) (at 42.0371 92.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5V" (id 1) (at 42.0371 95.2751 0)
@@ -1939,7 +1939,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 74.93 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1f5ce82f-3fd7-4053-8adb-fc8fc66958ed)
-    (property "Reference" "3V1" (id 0) (at 76.3271 92.5 0)
+    (property "Reference" "TP2" (id 0) (at 76.3271 92.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3V3" (id 1) (at 76.3271 95.2751 0)
@@ -2884,12 +2884,6 @@
     (path "/00000000-0000-0000-0000-000060df4569"
       (reference "#PWR014") (unit 1) (value "GND") (footprint "")
     )
-    (path "/1f5ce82f-3fd7-4053-8adb-fc8fc66958ed"
-      (reference "3V1") (unit 1) (value "3V3") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
-    )
-    (path "/8a3b2b4e-5877-4d53-a830-bd90843f7e33"
-      (reference "5V1") (unit 1) (value "5V") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
-    )
     (path "/c6f7fa14-603b-491d-a9ce-a267cd658b5c"
       (reference "C1") (unit 1) (value "22u") (footprint "kay:CAP-SMD_L3.2-W1.6-RD")
     )
@@ -2991,6 +2985,12 @@
     )
     (path "/d0731933-dfa7-44ad-bd38-bdee5e5cf590"
       (reference "R10") (unit 1) (value "47") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/8a3b2b4e-5877-4d53-a830-bd90843f7e33"
+      (reference "TP1") (unit 1) (value "5V") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/1f5ce82f-3fd7-4053-8adb-fc8fc66958ed"
+      (reference "TP2") (unit 1) (value "3V3") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
     (path "/00000000-0000-0000-0000-000060d0ce50"
       (reference "U1") (unit 1) (value "AMS1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
